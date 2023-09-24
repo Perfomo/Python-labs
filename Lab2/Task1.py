@@ -7,6 +7,8 @@ window.geometry("900x600")
 window.maxsize(1100, 700)  
 window.minsize(600, 450)
 
+window.iconphoto(0, PhotoImage(file = '/home/perfomo/Documents/Python_labs/Labs/Lab2/logo.png'))
+
 class Logic:
 
     arr = []
@@ -63,10 +65,10 @@ sort_button.place(relx=0.7, rely=0.1, relwidth=0.2)
 list_entry = Entry()
 list_entry.place(relx=0.1, rely=0.1, relwidth=0.5)
 
-
 lbl_sort = Label()
 lbl_sort.bind('<Configure>', lambda e: lbl_sort.config(wraplength=lbl_sort.winfo_width(), justify="right"))
 lbl_sort.place(rely=0.27, relx=0.1, relwidth=0.8)
+
 
 find_button = Button(
     text="Find!",
@@ -77,7 +79,6 @@ find_button.place(relx=0.7, rely=0.6, relwidth=0.2)
 
 num_entry = Entry()
 num_entry.place(relx=0.1, rely=0.6, relwidth=0.5)
-
 
 lbl_find = Label()
 lbl_find.bind('<Configure>', lambda e: lbl_find.config(wraplength=lbl_sort.winfo_width(), justify="right"))
